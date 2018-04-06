@@ -1,7 +1,7 @@
 #[cfg(feature = "std")]
-use std::hash::Hasher;
+pub use std::hash::Hasher;
 #[cfg(not(feature = "std"))]
-use core::hash::Hasher;
+pub use core::hash::Hasher;
 
 pub use util::make_table_crc32 as make_table;
 
